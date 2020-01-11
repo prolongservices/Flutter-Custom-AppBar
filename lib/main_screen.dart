@@ -4,7 +4,6 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
       body: Stack(
         children: <Widget>[
           Container(
@@ -13,27 +12,19 @@ class MainScreen extends StatelessWidget {
               title: Text('Prolong Services'),
               centerTitle: true,
               elevation: 0.0,
-              leading: InkWell(
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Icon(Icons.keyboard_backspace),
-                ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
+              leading: InkWell(child: Icon(Icons.keyboard_backspace), onTap: (){},),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 100),
+            padding: const EdgeInsets.only(top: 100),
             child: Card(
-              clipBehavior: Clip.antiAlias,
+              child: _buildBody(),
               margin: EdgeInsets.fromLTRB(16, 0, 16, 16),
-              shape: new RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
-              ),
               elevation: 8,
-              child: _buildBody(context),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8)
+              ),
+              clipBehavior: Clip.antiAlias,
             ),
           )
         ],
@@ -41,25 +32,24 @@ class MainScreen extends StatelessWidget {
     );
   }
 
-  _buildBody(context) {
+  _buildBody() {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ListView(
         children: <Widget>[
-          Text('Dummy test'),
+          Text('Dummy text 1'),
           SizedBox(height: 8,),
-          Text('Dummy test'),
+          Text('Dummy text 1'),
           SizedBox(height: 8,),
-          Text('Dummy test'),
+          Text('Dummy text 1'),
           SizedBox(height: 8,),
-          Text('Dummy test'),
+          Text('Dummy text 1'),
           SizedBox(height: 8,),
-          RaisedButton(
-            onPressed: () {},
-            child: Text('My Button'),
-            color: Colors.deepOrange,
-            textColor: Colors.white,
-          )
+          Text('Dummy text 1'),
+          SizedBox(height: 8,),
+          Text('Dummy text 1'),
+          SizedBox(height: 8,),
+          RaisedButton(onPressed: (){}, child: Text('Button 1'),)
         ],
       ),
     );
