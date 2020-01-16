@@ -1,16 +1,27 @@
-# flutter_custom_appbar
+# flutter custom appbar
 
-Create stylish appbar in flutter which will display under the main content.
+Create custom appbar in flutter and display your appbar underneath the main content. We will make the same in this tutorial, we will use card widget inside our main content and our appbar will display behind the card widget. We will add extra spacing to our card so appbar will be visible properly behind our card widget.
 
-## Getting Started
+Source code for Appbar underneath main content in flutter.
 
-This project is a starting point for a Flutter application.
+### Video tutorial for flutter app to demonstration of Custom appbar in flutter - Appbar underneath main content
 
-A few resources to get you started if this is your first Flutter project:
+## Custom appbar in flutter - Appbar underneath main content
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+[![Custom appbar in flutter - Appbar underneath main content](https://img.youtube.com/vi/1hzPMX0sR2M/0.jpg)](https://youtu.be/1hzPMX0sR2M)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#customAppbarFlutter
+#flutterAppbar
+#flutterAppbarWidget
+#flutterTutorialsForBeginners
+#flutterDdk
+#flutter.io
+#flutterByGoogle
+#flutterTutorials
+#flutterAppbarCustom
+#AppbarUnderneathMainContent
+#flutterAppbarLeading
+#flutterAppBarCustom
+#flutterAppbarWithIcon
+#appbarInFlutter
+#customAppbarInFlutter
